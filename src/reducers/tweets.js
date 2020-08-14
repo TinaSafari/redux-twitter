@@ -1,9 +1,9 @@
-import { RECEIVE_TWEETS } from "../actions/tweets";
+import {RECEIVE_TWEETS} from "../actions/tweets";
 
-export default function tweets (state= {}, action){
-    switch (action.type){
+export default function tweets(state = {}, action) {
+    switch (action.type) {
         case RECEIVE_TWEETS:
-            return{
+            return {
                 ...state,
                 ...action.tweets
             }
